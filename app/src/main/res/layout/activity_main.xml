@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.abner.opensourcechina.activity.MainActivity">
+
+  <RelativeLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:background="#42f185">
+  <TextView
+      android:id="@+id/TitleView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#ffffff"
+      android:text="综合"
+      android:textSize="16sp"
+      android:layout_centerInParent="true"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_icon"
+        android:layout_alignParentRight="true"
+        />
+   
+
+  </RelativeLayout>
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/mFrameGroup"
+      android:layout_weight="1"
+      ></FrameLayout>
+
+  <RadioGroup
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:orientation="horizontal"
+      android:weightSum="5"
+      >
+
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="综合"
+        android:button="@null"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:drawableTop="@drawable/news_selector"
+        android:id="@+id/zongHeBtn"
+        android:layout_weight="1"/>
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="动弹"
+        android:button="@null"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:drawableTop="@drawable/dongdan_selector"
+        android:id="@+id/dongTanBtn"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/add_selector"
+        android:layout_weight="1"
+        android:id="@+id/addBtn"/>
+
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="发现"
+        android:button="@null"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:drawableTop="@drawable/discover_selector"
+        android:id="@+id/discoverBtn"
+        android:layout_weight="1"/>
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="我的"
+        android:button="@null"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:drawableTop="@drawable/my_selector"
+        android:id="@+id/mineBtn"
+        android:layout_weight="1"/>
+
+
+
+
+  </RadioGroup>
+
+</LinearLayout>
